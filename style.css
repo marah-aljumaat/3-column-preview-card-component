@@ -1,0 +1,148 @@
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+font-family: 'Big Shoulders Display' ,sans-serif ;
+font-weight: 700;
+
+font-family: 'Lexend Deca' ,sans-serif ;
+font-weight: 400; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  min-height: 518px;
+  text-align: left;
+}
+
+.sedans {
+  padding: 40px;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 0 0 8px;
+}
+
+.suvs {
+  padding: 40px;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury {
+  padding: 40px;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 8px 8px 0;
+}
+
+.head {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 43px;
+  padding: 24px 0;
+}
+
+.paragraph,
+.btn {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 16px;
+  padding-bottom: 95px;
+}
+
+.btn {
+  border: 2px solid #fff;
+  padding: 10px 24px;
+  border-radius: 100px;
+  display: inline-block;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.sedans--btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans--btn:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs--btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs--btn:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury--btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury--btn:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    order: -1;
+  }
+
+  .sedans {
+    border-radius: 8px 8px 0 0;
+    padding: 60px;
+  }
+
+  .suvs {
+    padding: 60px;
+  }
+
+  .Luxury {
+    padding: 60px 66px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .paragraph {
+    padding-bottom: 30px;
+  }
+}
